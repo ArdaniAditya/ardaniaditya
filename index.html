@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="proses.php" method="POST" id="formTiket">
+        <h2>Pemesanan Tiket</h2>
+        <div class="form-grid">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" required>
+            <label for="jumlah">Jumlah Tiket:</label>
+            <input type="number" name="jumlah" id="jumlah" value="1" min="1" required>
+            <label for="kategori">Kategori:</label>
+            <select name="kategori" id="kategori">
+                <option value="dewasa">Dewasa</option>
+                <option value="anak">Anak</option>
+            </select>
+            <label for="totalHarga">Total Harga:</label>
+            <input type="text" id="totalHarga" readonly>
+        </div>
+        <button type="submit">Pesan Tiket</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
